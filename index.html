@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Выберите банк для подтверждения оплаты</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+        }
+        
+        body {
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 500px;
+            width: 100%;
+            background: white;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+        }
+        
+        header {
+            background: white;
+            text-align: center;
+            padding: 25px 20px 15px;
+            border-bottom: 1px solid #f1f3f5;
+        }
+        
+        header h1 {
+            font-size: 1.5rem;
+            font-weight: 500;
+            color: #343a40;
+            margin-bottom: 5px;
+        }
+        
+        .banks {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            padding: 20px;
+        }
+        
+        .bank-card {
+            display: flex;
+            align-items: center;
+            background: #f8f9fa;
+            border-radius: 12px;
+            padding: 16px 20px;
+            transition: all 0.3s ease;
+            border: 1px solid #e9ecef;
+            cursor: pointer;
+            text-decoration: none;
+        }
+        
+        .bank-card:hover {
+            background: #f1f3f5;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+        }
+        
+        .bank-logo {
+            width: 40px;
+            height: 40px;
+            border-radius: 10px;
+            margin-right: 15px;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+        
+        .bank-logo img {
+            width: 28px;
+            height: 28px;
+            object-fit: contain;
+        }
+        
+        .sber-logo {
+            background: #21AE5E;
+        }
+        
+        .sber-logo svg {
+            width: 28px;
+            height: 28px;
+            fill: white;
+        }
+        
+        .tinkoff-logo {
+            background: #FFDD2D;
+        }
+        
+        .bank-info {
+            flex: 1;
+        }
+        
+        .bank-info h2 {
+            font-size: 1.1rem;
+            color: #343a40;
+            font-weight: 500;
+            margin-bottom: 2px;
+        }
+        
+        .bank-info p {
+            color: #868e96;
+            font-size: 0.85rem;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 20px;
+            color: #868e96;
+            font-size: 0.8rem;
+            background: #f8f9fa;
+            border-top: 1px solid #e9ecef;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Выберите банк для подтверждения оплаты</h1>
+        </header>
+        
+        <div class="banks">
+            <a href="https://www.sberbank.com/sms/pbpn?requisiteNumber=79177173438" class="bank-card">
+                <div class="bank-logo sber-logo">
+                    <svg viewBox="0 0 1545 1544" width="28" height="28">
+                        <path fill="white" d="m1383.2 301.5c36.2 47.2 66.6 99 92.4 153.9l-702.2 518-295.6-185.6v-221.8l293.6 184.3z"/>
+                        <path fill="white" d="m178.4 772.9c0-11 0-20 2-30.4l-178.5-9c0 12.3-1.3 25.9-1.3 38.1 0 212.8 86.6 405.5 226.3 545.2l126.8-126.1c-108-106.1-175.3-253.5-175.3-417.8z"/>
+                        <path fill="white" d="m771.4 179.9c11 0 20.1 0 30.4 2l9.1-177.8c-11.7 0-25.9-2-37.5-2-213.4 0-406.2 86.7-546.5 226.3l126.8 126.8c106-108 255.4-175.3 417.7-175.3z"/>
+                        <path fill="white" d="m771.4 1365.9c-10.3 0-19.4 0-30.4-1.9l-9 177.8c12.3 0 25.8 2 38.1 2 212.8 0 406.1-86.7 545.8-227l-126.1-126.1c-106.7 109.9-254.1 175.2-418.4 175.2z"/>
+                        <path fill="white" d="m1106.4 283.4l150-111.2c-131.9-106.1-300.7-171.4-485-171.4v177.9c124.8 1.2 240.6 39.4 335 104.7z"/>
+                        <path fill="white" d="m1544.2 772.9c0-47.2-4.5-92.4-12.3-138.3l-165.6 122.8c0 4.5 0 11 0 15.5 0 174.6-76.3 331.1-196.5 439.1l120.2 132.6c155.2-139.7 254.2-345.3 254.2-571.7z"/>
+                        <path fill="white" d="m771.4 1365.9c-174.6 0-331.1-76.3-439.1-196.6l-132.5 120.3c141.6 156.5 345.3 254.2 571.6 254.2z"/>
+                        <path fill="white" d="m375 333.9l-120.3-132.6c-156.5 141.6-254.1 345.3-254.1 571.6h177.8c0-173.3 76.3-331.7 196.6-439z"/>
+                    </svg>
+                </div>
+                <div class="bank-info">
+                    <h2>Сбербанк</h2>
+                    <p>Перевод по номеру телефона</p>
+                </div>
+            </a>
+            
+            <a href="https://www.tinkoff.ru/rm/r_OwDAUIAKXj.mIxxRBlAgg/Foe2t69211" class="bank-card">
+                <div class="bank-logo tinkoff-logo">
+                    <img src="images/tinkoff-logo.png" alt="Т-Банк">
+                </div>
+                <div class="bank-info">
+                    <h2>Т-Банк</h2>
+                    <p>Перевод по номеру телефона</p>
+                </div>
+            </a>
+        </div>
+        
+        <footer>
+            <p>Все транзакции защищены по стандарту PCI DSS</p>
+        </footer>
+    </div>
+</body>
+</html>
