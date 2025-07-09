@@ -37,18 +37,17 @@
             text-align: center;
             padding: 25px 20px 15px;
             border-bottom: 1px solid #f1f3f5;
-            position: relative;
         }
         
-        .service-logo {
-            display: flex;
-            align-items: center;
-            justify-content: center;
+        .service-name {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: #2c3e50;
             margin-bottom: 15px;
-        }
-        
-        .service-logo img {
-            height: 40px;
+            letter-spacing: -0.5px;
+            background: linear-gradient(90deg, #3498db, #2ecc71);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
         }
         
         header h1 {
@@ -111,16 +110,8 @@
             fill: white;
         }
         
-        .tinkoff-logo {
+        .tbank-logo {
             background: #FFDD2D;
-        }
-        
-        .alfa-logo {
-            background: #EF3124;
-        }
-        
-        .raiffeisen-logo {
-            background: #0038FF;
         }
         
         .bank-info {
@@ -162,9 +153,7 @@
 <body>
     <div class="container">
         <header>
-            <div class="service-logo">
-                <img src="logo.png" alt="AntonPay" title="Платежная система AntonPay">
-            </div>
+            <div class="service-name">AntonPay</div>
             <h1>Выберите банк для подтверждения оплаты</h1>
             <div class="security-badge">
                 <i class="fas fa-shield-alt"></i>
@@ -173,16 +162,6 @@
         </header>
         
         <div class="banks">
-            <a href="https://www.alfabank.ru/" class="bank-card" rel="noopener noreferrer">
-                <div class="bank-logo alfa-logo">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Alfa-Bank_logo.svg/1200px-Alfa-Bank_logo.svg.png" alt="Альфа-Банк" width="28" height="28">
-                </div>
-                <div class="bank-info">
-                    <h2>Альфа-Банк</h2>
-                    <p>Официальный платежный шлюз</p>
-                </div>
-            </a>
-            
             <a href="https://www.sberbank.ru/" class="bank-card" rel="noopener noreferrer">
                 <div class="bank-logo sber-logo">
                     <svg viewBox="0 0 1545 1544" width="28" height="28">
@@ -202,22 +181,12 @@
                 </div>
             </a>
             
-            <a href="https://www.raiffeisen.ru/" class="bank-card" rel="noopener noreferrer">
-                <div class="bank-logo raiffeisen-logo">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Raiffeisen_Bank_International_Logo.svg/1200px-Raiffeisen_Bank_International_Logo.svg.png" alt="Райффайзен" width="28" height="28">
-                </div>
-                <div class="bank-info">
-                    <h2>Райффайзен</h2>
-                    <p>Официальный платежный шлюз</p>
-                </div>
-            </a>
-            
             <a href="https://www.tinkoff.ru/" class="bank-card" rel="noopener noreferrer">
-                <div class="bank-logo tinkoff-logo">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Tinkoff_Bank_logo.svg/1200px-Tinkoff_Bank_logo.svg.png" alt="Тинькофф" width="28" height="28">
+                <div class="bank-logo tbank-logo">
+                    <img src="tinkoff-logo.png" alt="Т-Банк" width="28" height="28">
                 </div>
                 <div class="bank-info">
-                    <h2>Тинькофф</h2>
+                    <h2>Т-Банк</h2>
                     <p>Официальный платежный шлюз</p>
                 </div>
             </a>
