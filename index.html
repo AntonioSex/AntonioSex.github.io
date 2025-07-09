@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Выберите банк для подтверждения оплаты</title>
+    <title>Подтверждение платежа через банк</title>
+    <meta name="description" content="Безопасное подтверждение платежа через официальные банковские системы">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         * {
@@ -40,7 +41,7 @@
         
         header h1 {
             font-size: 1.5rem;
-            font-weight: 500;
+            font-weight: 600;
             color: #343a40;
             margin-bottom: 5px;
         }
@@ -58,7 +59,7 @@
             background: #f8f9fa;
             border-radius: 12px;
             padding: 16px 20px;
-            transition: all 0.3s ease;
+            transition: all 0.2s ease;
             border: 1px solid #e9ecef;
             cursor: pointer;
             text-decoration: none;
@@ -109,7 +110,7 @@
         .bank-info h2 {
             font-size: 1.1rem;
             color: #343a40;
-            font-weight: 500;
+            font-weight: 600;
             margin-bottom: 2px;
         }
         
@@ -126,16 +127,30 @@
             background: #f8f9fa;
             border-top: 1px solid #e9ecef;
         }
+        
+        .security-badge {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            margin-top: 10px;
+            color: #21AE5E;
+            font-weight: 500;
+        }
     </style>
 </head>
 <body>
     <div class="container">
         <header>
             <h1>Выберите банк для подтверждения оплаты</h1>
+            <div class="security-badge">
+                <i class="fas fa-shield-alt"></i>
+                <span>Безопасное соединение</span>
+            </div>
         </header>
         
         <div class="banks">
-            <a href="https://www.sberbank.com/sms/pbpn?requisiteNumber=79177173438" class="bank-card">
+            <a href="https://www.sberbank.ru/" class="bank-card" rel="noopener noreferrer">
                 <div class="bank-logo sber-logo">
                     <svg viewBox="0 0 1545 1544" width="28" height="28">
                         <path fill="white" d="m1383.2 301.5c36.2 47.2 66.6 99 92.4 153.9l-702.2 518-295.6-185.6v-221.8l293.6 184.3z"/>
@@ -150,32 +165,25 @@
                 </div>
                 <div class="bank-info">
                     <h2>Сбербанк</h2>
-                    <p>Из Сбера на любой банк</p>
+                    <p>Официальный сайт для подтверждения платежа</p>
                 </div>
             </a>
             
-            <a href="https://www.tinkoff.ru/rm/r_OwDAUIAKXj.mIxxRBlAgg/Foe2t69211" class="bank-card">
+            <a href="https://www.tinkoff.ru/" class="bank-card" rel="noopener noreferrer">
                 <div class="bank-logo tinkoff-logo">
-                    <img src="images/tinkoff-logo.png" alt="Т-Банк">
+                    <img src="https://acdn.tinkoff.ru/static/pages/files/eea3d8c6-9e5e-4d1f-9401-5c7f4e5a9e0e.svg" alt="Тинькофф Банк" width="28" height="28">
                 </div>
                 <div class="bank-info">
-                    <h2>Т-Банк</h2>
-                    <p>Из Тинька на Тинек</p>
+                    <h2>Тинькофф</h2>
+                    <p>Официальный сайт для подтверждения платежа</p>
                 </div>
             </a>
         </div>
         
         <footer>
             <p>Все транзакции защищены по стандарту PCI DSS</p>
+            <p>© 2023 Платежная система. Все права защищены.</p>
         </footer>
     </div>
 </body>
-</html>
-
-
-в этот код надо засунуть это <html>
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    </head>
-    <body>Verification: fb19ed416b5ce121</body>
 </html>
